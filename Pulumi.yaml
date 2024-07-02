@@ -1,0 +1,10 @@
+name: iac
+runtime:
+  name: nodejs
+  options:
+    packagemanager: pnpm
+description: when defining a subdomain, the name of the record passed to cloudflare should be just the subdomain - not the full domain, however, the pulumi name should be the full domain icluding subdomain
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: https://www.pulumi.com/ai/api/project/ca85f891-ad02-4ab6-a4ee-dcb13a364874.zip

@@ -1,0 +1,13 @@
+{
+  "name": "iac",
+  "description": "when defining a subdomain, the name of the record passed to cloudflare should be just the subdomain - not the full domain, however, the pulumi name should be the full domain icluding subdomain",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "dependencies": {
+    "@pulumi/pulumi": "*",
+    "@pulumi/cloudflare": "5.12.0"
+  }
+}
