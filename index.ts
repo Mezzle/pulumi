@@ -216,6 +216,104 @@ const domains: Domain[] = [
     zone: 'gamerpowered.co.uk',
     plan: 'free',
     accountId: '210f6155f91d906f7be43315f9deadae',
+    records: [
+      {
+        name: 'gamerpowered.co.uk',
+        type: 'A',
+        value: '76.76.21.21',
+        ttl: 1,
+      },
+      {
+        name: 'email.gamerpowered.co.uk',
+        type: 'CNAME',
+        value: 'mailgun.org',
+        ttl: 1,
+      },
+      {
+        name: 'fm1._domainkey.gamerpowered.co.uk',
+        type: 'CNAME',
+        value: 'fm1.gamerpowered.co.uk.dkim.fmhosted.com',
+        ttl: 1,
+      },
+      {
+        name: 'fm2._domainkey.gamerpowered.co.uk',
+        type: 'CNAME',
+        value: 'fm2.gamerpowered.co.uk.dkim.fmhosted.com',
+        ttl: 1,
+      },
+      {
+        name: 'fm3._domainkey.gamerpowered.co.uk',
+        type: 'CNAME',
+        value: 'fm3.gamerpowered.co.uk.dkim.fmhosted.com',
+        ttl: 1,
+      },
+      {
+        name: 'www.gamerpowered.co.uk',
+        type: 'CNAME',
+        value: 'cname.vercel-dns.com',
+        ttl: 1,
+      },
+      {
+        name: '*.gamerpowered.co.uk',
+        type: 'MX',
+        value: [{ "priority": 20, "name": "in2-smtp.messagingengine.com" },{ "priority": 10, "name": "in1-smtp.messagingengine.com" }],
+        ttl: 1,
+      },
+      {
+        name: 'gamerpowered.co.uk',
+        type: 'MX',
+        value: [
+          { priority: 10, name: 'in1-smtp.messagingengine.com' },
+          {
+            priority: 20,
+            name: 'in2-smtp.messagingengine.com',
+          },
+        ],
+        ttl: 1,
+      },
+      
+      {
+        name: '_dmarc.gamerpowered.co.uk',
+        type: 'TXT',
+        value:
+          '"v=DMARC1; p=quarantine; rua=mailto:0ac5c9739c09427ba9865a99e041e627@dmarc-reports.cloudflare.net,mailto:hq45cvpw@ag.eu.dmarcian.com; ruf=mailto:hq45cvpw@fr.eu.dmarcian.com; fo=1; adkim=s; aspf=s;"',
+        ttl: 1,
+      },
+      {
+        name: 'gamerpowered.co.uk',
+        type: 'TXT',
+        value:
+          'v=spf1 include:spf.messagingengine.com include:mailgun.org include:_spf.google.com include:_spf.sourceguru.net ~all',
+        ttl: 1,
+      },
+      {
+        name: 'google._domainkey.gamerpowered.co.uk',
+        type: 'TXT',
+        value:
+          'v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4aRs4GrHnKsSLtozdTznCT6rKgHxtjAkyIGwFxj+fGW6EbmmyTZYETSgMRiexPnGAB+LVPD03smkrZ4oBcaxZpyOYwWb1msYMAt73FxHj91Lc7PnyizaU3/XDlfx4XzPGsbQwcBIBTARMmdx9FKuXqYm2BqZw2AI8nYZV5L+FNGStcd5VUaK4UKLUbAkw7YJEkXiOcCQkrZrANEVXX13lFxhb+ERNmnENEhGAjImW7/ZY6tMvgLUmNuE5g92upkmIjT+RWBFeNTrSZ1OFFfK/yJ9PhfatRJXWcnUZjlZYEckpAcuwzj/wASOltNzaLyEX/ZyimoVAPPcWCn4HUzBKQIDAQAB',
+        ttl: 1,
+      },
+      {
+        name: '_keybase.gamerpowered.co.uk',
+        type: 'TXT',
+        value:
+          'keybase-site-verification=rtsXnomTPUoDNke-0a0RlnLEPEwkm3aZjvesfF0baqU',
+        ttl: 1,
+      },
+      {
+        name: 'mx._domainkey.gamerpowered.co.uk',
+        type: 'TXT',
+        value:
+          'k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPG0UhHccGLaNJxzjtU6HUzLNzEBvffdkI4hirAmjh9ecQFirgUNDIME1NjTk3FSVEp29UAAv5x5WHpYUmqQtmxHwssMzdZ0m9gQd6PLDPbyvkJ75DJsHxNXgmD9rzMZ40Ueo0aajQY/wq/301pjU1Ywvqn3enPZb22i265wjZ9QIDAQAB',
+        ttl: 1,
+      },
+      {
+        name: '_smtp._tls.gamerpowered.co.uk',
+        type: 'TXT',
+        value: 'v=TLSRPTv1; rua=mailto:hq45cvpw@tls.eu.dmarcian.com',
+        ttl: 1,
+      },
+    ],
   },
   {
     zone: 'gamerpowered.net',
